@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- form start -->
+    <div class="container ">
+        <div id="startQuiz" class="startQuiz">
+            <img src="images/logo.jpg">
+            <div class="info">
+                <label for="name">Enter your name :</label>
+                <input type="text" id="user">
+                <br /><br />
+                <label for="name">Enter your email :</label>
+                <input type="text" id="email">
+                <br /><br />
+            </div>
+            <button onclick="submit()" class="submitButton">submit</button>
+        </div>
+    </div>
+    <!-- start button  -->
+    <button id="start" class="hide quizStart" onclick="startQuiz()">Start Quiz</button>
+
+    <!-- quiz start -->
+    <div id="select" class="hide  info">
+        <div class="header">
+            <h5 id="firstName"></h5>
+            <h6 id="userEmail"></h6>
+        </div>
+        <div id="body">
+            <span class="Btn hide" id="verifiBtn">
+                <button type="submit">start</button>
+            </span>
+            <span class="timer">
+                <span id="counter"></span>
+            </span>
+            <div class="main">
+                <h1 id="question"></h1>
+                <li class="option"></li>
+                <li class="option"></li>
+                <li class="option"></li>
+                <br /><br />
+                <button id="next" onclick="nextQues()" class="submitButton">Next</button>
+                <button id="final" onclick="finalResult()" class="submitButton hide">Submit</button>
+            </div>
+            <div id="result" class="hide">
+                <h3 id="points">50</h3>
+            </div>
+        </div>
+        <!-- quiz end -->
+        <script src="app.js"></script>
+</body>
+
+</html>
